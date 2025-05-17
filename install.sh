@@ -29,7 +29,7 @@ function InstallVestaCPBashScript()
 	echo "Install VestaCP Script..."
 	
 	cd /tmp
-	wget -O /usr/local/vesta/bin/v-csf https://raw.githubusercontent.com/sam927752/vestacp-csf/master/v-csf.txt
+	wget -O /usr/local/vesta/bin/v-csf https://raw.githubusercontent.com/kiz77/vestacp-csf/master/v-csf.txt
 	chmod 770 /usr/local/vesta/bin/v-csf
 }
 
@@ -40,7 +40,7 @@ function InstallVestaCPFrontEnd()
 	
 	cd /tmp
 	mkdir /usr/local/vesta/web/list/csf
-	wget https://raw.githubusercontent.com/sam927752/vestacp-csf/master/csf.zip
+	wget https://raw.githubusercontent.com/kiz77/vestacp-csf/master/csf.zip
 	unzip /tmp/csf.zip -d /usr/local/vesta/web/list/
 	rm -f /tmp/csf.zip
 
